@@ -13,7 +13,7 @@ assert largest([3,10,3]) == 10
 def largest(list):
     list.sort()
     count = len(list)
-    selected = int(list[count - 1])
-    return float(selected)
+    selected = list[count - 1]
+    return selected
 
 assert largest([3,10,3]) == 10
