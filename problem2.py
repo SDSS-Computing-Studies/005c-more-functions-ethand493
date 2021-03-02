@@ -13,3 +13,15 @@ assert hypotenuse(12,5,False) == 13
 assert hypotenuse(5,3,True) == 4
 (2 points)
 """
+import math
+
+def hypotenuse(a, b, hypo):
+    missingside = 0
+    if hypo == True:
+        missingside = math.sqrt(a**2 - b**2) 
+    else:
+        missingside = math.sqrt(a**2 + b**2)
+    return missingside
+
+assert hypotenuse(12,5,False) == 13
+assert hypotenuse(5,3,True) == 4
